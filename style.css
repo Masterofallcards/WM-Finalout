@@ -1,0 +1,595 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    color: #4871e3;
+}
+.We{
+    color: rgb(226, 197, 32);
+}
+
+
+
+
+
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9fafb;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(50, 39, 127);
+    box-shadow: 0 2px 4px rgba(1.5, 1, 0.5, 0.5);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 1rem;
+}
+
+.logo h1 {
+    color: #2563eb;
+    font-size: 1.5rem;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: goldenrod;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    padding: 0; /* No padding for the image inside */
+    box-shadow: 0 4px 6px rgba(2, 2, 2, 3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    max-width: 500px; /* Card width limit */
+    overflow: hidden; /* Ensures the image fits perfectly inside the card */
+}
+
+.hero .card:hover {
+    box-shadow: 0 8px 12px rgba(1, 1, 1, 2);
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    margin-top: 2rem;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h4 {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+
+
+
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    margin-top: 2rem;
+    border-bottom: 5px;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+.contact-item:hover {
+    color: #09246f;
+}
+
+
+
+
+
+
+
+
+/* Contact Section */
+#contact {
+    padding: 0.5rem 1rem;
+    background-color: white;
+}
+
+#contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards side by side */
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-box {
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
+    padding: 1rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns inside each card */
+    gap: 1rem;
+}
+
+.contact-columns .contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.map-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 1rem;
+}
+
+.map-link:hover {
+    color: #1d4ed8;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    #contact-section {
+        grid-template-columns: repeat(2, 1fr); /* Two cards in a single line */
+    }
+    .contact-content {
+        grid-template-columns: repeat(2, 1fr); /* Two columns inside each card */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+.services {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.services-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* Services Grid */
+#services-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: One card per row (mobile view) */
+    gap: 1rem; /* Space between cards */
+    margin-top: 2rem;
+}
+
+/* Service Card Styles */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc; /* Border around the card */
+    border-radius: 0.5rem; /* Rounded corners for card */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Header Section */
+.service-header {
+    padding: 1rem 0;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center; /* Center-align title */
+}
+
+/* Body Section */
+.service-body {
+    padding: 1rem 0;
+}
+
+.service-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center; /* Center-align content */
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    #services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two cards side by side for tablets and desktops */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-container {
+    display: flex;
+    gap: 1rem; /* Add space between buttons */
+    justify-content: center; /* Optional: Center-align buttons */
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center; /* Ensures the text is centered */
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+
+
+.hero-section h2 {
+    padding-top: 20px;
+}
+
+
+
+/* Hero Section */
+.hero-section {
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: white;
+}
+
+.header-card img {
+    border-radius: 5px;
+}
+
+.header-card h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+
+/* Services Section */
+.services {
+    padding-top: 20px;
+    background-color: #f9fafb;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+.about {
+    padding: 5px 10px;
+    padding-bottom: 70px;
+    background-color: white;
+}
+.about h2 {
+    margin-bottom: 0%;
+}
+.about-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 6px rgba(2, 2, 2, 2);
+    margin-top: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem 2rem;
+    background-color: #f9fafb;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.testimonial-header img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+
+
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 2px;
+        right: 2px;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 1px 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
+    }
+}
+
+
+
+/* Map Section */
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.map .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 7px 15px; /* Adjusted padding for top, bottom, left, and right */
+    background-color: white;
+    max-width: 90%; /* Responsive scaling */
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.map .card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.map img {
+    width: calc(100% - 30px); /* Subtract padding for a perfect fit */
+    max-width: 600px; /* Ensures the map is not too wide */
+    border-radius: 8px;
+    display: block;
+    margin: 7px auto 0 auto; /* Adds a consistent top margin */
+}
+
+
+.footer {
+    background-color: #1d4ed8;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5px;
+    border-top: 5px;
+  }
+
+
+/* Floating Button Shared Styles */
+.floating-btn {
+    position: fixed;
+    bottom: 20px; 
+    width: 40px;
+    height: 40px;
+    background-color: transparent; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    z-index: 1000;
+    pointer-events: auto; 
+    cursor: pointer;
+    overflow: hidden; 
+  }
+  
+
+  .floating-btn:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+ 
+  .icon {
+    width: 80%; 
+    height: 80%; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    background-color: transparent; 
+  }
+  
+  
+  .phone-btn {
+    left: 20px; 
+    background-color: transparent;
+  }
+  
+  .map-btn {
+    right: 20px;
+    background-color: transparent; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .floating-btn {
+      width: 60px;
+      height: 60px;
+      bottom: 25px; 
+    }
+  
+    .icon {
+      width: 113%; 
+      height: 113%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
