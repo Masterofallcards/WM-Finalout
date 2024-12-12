@@ -126,6 +126,10 @@ body {
 
 
 
+.hero-text h2, .hero-text h4 {
+    font-family: 'Playfair Display', serif;
+}
+
 
 
 /* Contact Section */
@@ -160,12 +164,6 @@ body {
 .contact-item:hover {
     color: #09246f;
 }
-
-
-
-
-
-
 
 
 /* Contact Section */
