@@ -408,21 +408,33 @@ body {
 
 /* CSS for the Map Image Card */
 .map .card {
-    padding: 0; /* Remove padding at top and bottom */
+    padding: 15px; /* Add consistent padding */
     margin: 20px auto; /* Center the card horizontally */
-    width: 80%; /* Adjust card width as needed */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Add box shadow effect */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    overflow: hidden; /* Ensure the image fits within the card */
-    background-color: #fff; /* Optional: Set background color for card */
-    text-align: center; /* Center-align the content inside the card */
+    width: 80%; /* Adjust card width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Add shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure content fits within the card */
+    background-color: #fff; /* Card background */
+    text-align: center; /* Center-align content */
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
 }
 
+/* CSS for the Map Image */
 .map .card img {
-    width: auto; /* Allow image to scale proportionally */
-    max-width: 100%; /* Ensure the image doesn't exceed card width */
-    display: inline-block; /* Ensures centering within the card */
-    margin: 0 auto; /* Center image horizontally */
+    width: 100%; /* Image should fill the card's width */
+    border-radius: 8px; /* Apply same rounded corners as card */
+    margin: 0 auto; /* Center image */
+    display: block; /* Ensures the image displays properly */
+    padding: 7px; /* Add padding to avoid merging */
+}
+
+/* CSS for Bottom Content */
+.map .card-content {
+    padding: 15px; /* Add padding for text/content inside the card */
+    margin-top: 10px; /* Separate content from the image */
+    background-color: #f9f9f9; /* Optional: Light background for content area */
+    border-top: 1px solid #ddd; /* Add a subtle border */
 }
 
 
