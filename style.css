@@ -405,6 +405,32 @@ body {
     margin-bottom: 1rem;
 }
 
+
+/* CSS for the Map Image Card */
+.map .card {
+    padding: 0; /* Remove padding at top and bottom */
+    margin: 20px auto; /* Center the card horizontally */
+    width: 80%; /* Adjust card width as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Add box shadow effect */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensure the image fits within the card */
+    background-color: #fff; /* Optional: Set background color for card */
+    text-align: center; /* Center-align the content inside the card */
+}
+
+.map .card img {
+    width: auto; /* Allow image to scale proportionally */
+    max-width: 100%; /* Ensure the image doesn't exceed card width */
+    display: inline-block; /* Ensures centering within the card */
+    margin: 0 auto; /* Center image horizontally */
+}
+
+
+
+
+
+
+
 /* About Section */
 .about {
     padding: 5px 10px;
