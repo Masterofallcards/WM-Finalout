@@ -131,8 +131,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
-    background-color: white;
-}
+    background-color: #fff;
 
 .contact-grid {
     display: grid;
@@ -171,7 +170,7 @@ body {
 /* Contact Section */
 #contact {
     padding: 0.5rem 1rem;
-    background-color: #fff;
+    background-color: white;
 }
 
 #contact-section {
