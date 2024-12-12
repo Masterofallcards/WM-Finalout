@@ -500,38 +500,6 @@ section h2 {
 
 
 
-/* Map Section */
-.map {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-}
-
-.map .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 7px 15px; /* Adjusted padding for top, bottom, left, and right */
-    background-color: white;
-    max-width: 90%; /* Responsive scaling */
-    text-align: center;
-    transition: box-shadow 0.3s ease;
-}
-
-.map .card:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.map img {
-    width: calc(100% - 30px); /* Subtract padding for a perfect fit */
-    max-width: 600px; /* Ensures the map is not too wide */
-    border-radius: 8px;
-    display: block;
-    margin: 7px auto 0 auto; /* Adds a consistent top margin */
-}
-
 
 .footer {
     background-color: #1d4ed8;
