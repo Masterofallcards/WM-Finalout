@@ -593,3 +593,54 @@ section h2 {
 
 
 
+  .banner {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    max-width: 500px; /* Card width limit */
+    width: 100%; /* Ensure responsiveness */
+    overflow: hidden; /* Ensures the image fits perfectly inside the card */
+}
+
+.banner-card img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills without distortion */
+    display: block; /* Remove image bottom spacing */
+}
+
+.banner-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.banner-content {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.banner-content h3 {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.banner-content h1, .banner-content h3 {
+    font-family: 'Playfair Display', serif;
+}
