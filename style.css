@@ -457,7 +457,7 @@ CSS for Card Content
 }
 
 .testimonial-header {
-    display: block;
+    display: inline-block;
     align-items: center;
     margin-bottom: 1rem;
 }
