@@ -138,89 +138,88 @@ body {
     background-color: white;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-bottom: 2px;
-    margin-top: 2rem;
-    border-bottom: 5px;
-    text-align: center;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    color: #2563eb;
-    text-decoration: none;
-    font-size: 1.25rem;
-    transition: color 0.3s;
-}
-
-.contact-item:hover {
-    color: #09246f;
-}
-
-
-/* Contact Section */
-#contact {
-    padding: 0.5rem 1rem;
-    background-color: white;
-}
-
 #contact-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two cards side by side */
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 2rem;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .contact-box {
     background: #f9fafb;
     border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
-    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns inside each card */
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Space between elements */
 }
 
 .contact-columns .contact-column {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
 }
 
+.contact-item,
 .map-link {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
+    justify-content: center; /* Align icons and text properly */
+    gap: 0.5rem; /* Space between icon and text */
     color: #2563eb;
+    text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
+.contact-item i,
+.map-link i {
+    font-size: 1.25rem; /* Icon size */
+}
+
+.contact-item:hover,
 .map-link:hover {
     color: #1d4ed8;
+}
+
+/* Icon Styling */
+.icon-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
 }
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
     #contact-section {
-        grid-template-columns: repeat(2, 1fr); /* Two cards in a single line */
+        grid-template-columns: 1fr; /* Stack cards vertically for mobile */
     }
+
     .contact-content {
-        grid-template-columns: repeat(2, 1fr); /* Two columns inside each card */
+        gap: 1rem; /* Adjust spacing for mobile */
     }
 }
+
 
 
 
