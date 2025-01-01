@@ -599,6 +599,15 @@ section h2 {
     align-items: center;
 }
 
+.banner {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .banner-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -640,4 +649,18 @@ section h2 {
 
 .banner-content h1, .banner-content h3 {
     font-family: 'Playfair Display', serif;
+}
+@media (min-width: 768px) {
+    .banner-card {
+        max-width: 800px; /* Increase width for desktop */
+        margin-bottom: 2rem;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5rem; /* Adjust font size for larger screens */
+    }
+
+    .banner-content h3 {
+        font-size: 1.5rem;
+    }
 }
