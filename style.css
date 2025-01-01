@@ -82,9 +82,9 @@ body {
 .hero {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f9f9f9;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;
 }
 
@@ -92,25 +92,29 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: white;
-    padding: 0; /* No padding for the image inside */
+    padding: 0;
     box-shadow: 0 4px 6px rgba(2, 2, 2, 3);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    max-width: 500px; /* Card width limit */
-    overflow: hidden; /* Ensures the image fits perfectly inside the card */
+    width: 100%; /* Make card span the full width */
+    max-width: 1200px; /* Limit the maximum size for larger screens */
+    overflow: hidden;
 }
 
 .hero .card:hover {
     box-shadow: 0 8px 12px rgba(1, 1, 1, 2);
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px);
 }
 
 .hero-image {
-    width: 100%;
+    width: 100%; /* Ensure the image spans the full width of the card */
+    height: auto; /* Maintain aspect ratio */
     display: block;
 }
 
 .hero-text {
     margin-top: 2rem;
+    text-align: center;
+    max-width: 800px; /* Limit the width of the text for readability */
 }
 
 .hero-text h2 {
@@ -124,11 +128,25 @@ body {
     color: #666;
 }
 
-
-
 .hero-text h2, .hero-text h4 {
     font-family: 'Playfair Display', serif;
 }
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .hero {
+        padding: 6rem 4rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text h4 {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 
@@ -313,51 +331,6 @@ body {
 
 
 
-.button-container {
-    display: flex;
-    gap: 1rem; /* Add space between buttons */
-    justify-content: center; /* Optional: Center-align buttons */
-}
-
-.btn {
-    display: inline-block;
-    background: #2563eb;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    text-align: center; /* Ensures the text is centered */
-}
-
-.btn:hover {
-    background: #1d4ed8;
-}
-
-
-
-.hero-section h2 {
-    padding-top: 20px;
-}
-
-
-
-/* Hero Section */
-.hero-section {
-    padding-bottom: 70px;
-    text-align: center;
-    background-color: white;
-}
-
-.header-card img {
-    border-radius: 5px;
-}
-
-.header-card h2 {
-    margin-top: 1rem;
-    font-size: 2rem;
-    color: #333;
-}
 
 
 /* Services Section */
