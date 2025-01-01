@@ -435,6 +435,11 @@ CSS for Card Content
     box-shadow: 2px 4px 6px rgba(2, 2, 2, 2);
     margin-top: 0.5rem;
 }
+@media (min-width: 768px) {
+    .about-card {
+        margin: 2rem; /* Larger margin for desktop */
+    }
+}
 
 
 /* Testimonials Section */
@@ -475,6 +480,19 @@ CSS for Card Content
     margin: 0;
     font-size: 1.2em; /* Optional: Adjust text size if necessary */
 }
+@media (min-width: 768px) {
+    .testimonial-grid {
+        display: block;
+    }
+    .testimonials h3{
+        font-size: large;
+    }
+    .testimonial-card {
+    margin: 2rem;
+    padding-bottom: 2rem;
+    }
+}
+
 
 
 
